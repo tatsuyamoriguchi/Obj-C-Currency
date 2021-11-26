@@ -28,7 +28,11 @@
     NSLog(@"Account 1: %.2f", account1);
     NSLog(@"Account 2: %.2f", account2);
     NSLog(@"Sum: %.2f", account1 + account2);
-    
+    /*
+     2021-11-26 11:29:52.405896-0800 Obj-C-Currency[1741:62806] Account 1: 97.00
+     2021-11-26 11:29:52.406585-0800 Obj-C-Currency[1741:62806] Account 2: -3.00
+     2021-11-26 11:29:52.406868-0800 Obj-C-Currency[1741:62806] Sum: 94.00
+     */
     
     
     return YES;
