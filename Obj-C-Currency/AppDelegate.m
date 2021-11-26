@@ -25,13 +25,13 @@
         account2 += transferAmount;
     }
     
-    NSLog(@"Account 1: %.2f", account1);
-    NSLog(@"Account 2: %.2f", account2);
-    NSLog(@"Sum: %.2f", account1 + account2);
+    NSLog(@"Account 1: %.12f", account1);
+    NSLog(@"Account 2: %.12f", account2);
+    NSLog(@"Sum: %.12f", account1 + account2);
     /*
-     2021-11-26 11:29:52.405896-0800 Obj-C-Currency[1741:62806] Account 1: 97.00
-     2021-11-26 11:29:52.406585-0800 Obj-C-Currency[1741:62806] Account 2: -3.00
-     2021-11-26 11:29:52.406868-0800 Obj-C-Currency[1741:62806] Sum: 94.00
+     2021-11-26 11:35:31.495101-0800 Obj-C-Currency[1870:66179] Account 1: 97.000045776367
+     2021-11-26 11:35:31.495325-0800 Obj-C-Currency[1870:66179] Account 2: 2.999999284744
+     2021-11-26 11:35:31.495456-0800 Obj-C-Currency[1870:66179] Sum: 100.000045776367
      */
     
     
