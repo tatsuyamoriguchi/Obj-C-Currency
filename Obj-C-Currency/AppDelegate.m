@@ -15,7 +15,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    float initial = 100.00;
     float account1 = 100.00;
     float account2 = 0.00;
     float transferAmount = 0.1;
@@ -25,9 +25,20 @@
         account2 += transferAmount;
     }
     
+    float tolerance = FLT_EPSILON * 1000; // Increase the tolerance value by 1000 to return true from the if statement below.
+    
+    if (ABS((account1 + account2) < (initial + tolerance))) {
     NSLog(@"Account 1: %.12f", account1);
     NSLog(@"Account 2: %.12f", account2);
     NSLog(@"Sum: %.12f", account1 + account2);
+    } else {
+        NSLog(@"Account 1: %.12f", account1);
+        NSLog(@"Account 2: %.12f", account2);
+        NSLog(@"Sum: %.12f", account1 + account2);
+        NSLog(@"tolerance: %.12f", tolerance);
+
+        NSLog(@"The descrepancy from Float calculation is larger than Tolerance range.");
+    }
     /*
      2021-11-26 11:35:31.495101-0800 Obj-C-Currency[1870:66179] Account 1: 97.000045776367
      2021-11-26 11:35:31.495325-0800 Obj-C-Currency[1870:66179] Account 2: 2.999999284744
