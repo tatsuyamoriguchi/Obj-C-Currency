@@ -15,7 +15,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    float account1 = 100.00;
+    float account2 = 0.00;
+    float transferAmount = 0.1;
+    
+    for(int i = 0; i < 30; i++) {
+        account1 -= transferAmount;
+        account2 -= transferAmount;
+    }
+    
+    NSLog(@"Account 1: %.2f", account1);
+    NSLog(@"Account 2: %.2f", account2);
+    NSLog(@"Sum: %.2f", account1 + account2);
+    
+    
+    
     return YES;
 }
 
