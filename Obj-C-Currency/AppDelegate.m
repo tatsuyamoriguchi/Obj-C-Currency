@@ -22,7 +22,7 @@
     
     for(int i = 0; i < 30; i++) {
         account1 -= transferAmount;
-        account2 -= transferAmount;
+        account2 += transferAmount;
     }
     
     NSLog(@"Account 1: %.2f", account1);
